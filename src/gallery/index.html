@@ -26,23 +26,30 @@
         <h1><%= data.Headline %></h1>
         <div class="author">By <%= data.Photographers %></div>
         <div class="date"><%= data.Date %></div>
-        <% var deck_text = data.Deck.replace("**","<a href='http://www.sfchronicle.com/sports/warriors/' target='_blank'>").replace("*","</a>"); %>
+        <% var deck_text = data.Deck.replace("**","<a href='http://www.sfchronicle.com/bayarea/article/Police-swarm-UPS-building-in-SF-on-report-of-11219519.php' target='_blank'>").replace("*","</a>"); %>
         <div class="deck"><%= deck_text %></div>
       </div>
 
       <% json.ups_shooting_gallery['images'].forEach(function(img) { %>
         <div class="img <%= img.Size %>">
           <img src="http://ww2.hdnux.com/photos/61/64/55/<%= img.Wcm_id %>/5/2000x0.jpg">
-          <div class="caption"><%= img.Caption %> <span class="byline"> <%= img.Photographer %></span></div>
+          <span class="byline"> <%= img.Photographer %></span>
         </div>
+        <div class="caption"><%= img.Caption %> </div>
 
      <% }); %>
+
+     <div class="border-class"></div>
+     <div class="credit-container">
+       <div class="credit">Edited by <a href="mailto:fdiaz@sfchronicle.com">Fernando Diaz</a></div>
+       <div class="credit">Developed by <a href="mailto:eoneill@sfchronicle.com">Emma O'Neill</a></div>
+     </div>
 
     </div>
 
     <%= t.include("partials/_footer.html") %>
 
-    <script src="app.js" async></script>
+    <script src="../app.js" async></script>
     <%= t.include("partials/_helloSFC.html") %>
 
   </body>

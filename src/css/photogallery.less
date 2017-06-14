@@ -29,6 +29,7 @@
 	.deck{
 		font-family:@med-graphics;
 		padding-top: 2em;
+		padding-bottom: 2em;
 
 		@media @tablet{
 			font-size:18px;
@@ -45,22 +46,54 @@
 	margin:0;
 	font-size:18px;
 	font-family:@med-graphics;
-	padding-top: 10px;
+	padding-bottom: 7em;
+	max-width: 900px;
+	margin: auto;
+	text-align: center;
 	@media @mobile {
 		font-size: 16px;
 	}
 }
-.vertical{
-	max-width:500px;
+.Vertical{
+	max-width: 500px;
+	margin: auto;
 }
 
 .img{
-	margin: 4em auto;
+	// margin: 4em auto;
+	margin: auto;
+	margin-bottom: 1em;
+	width: 100%;
 	@media @mobile {
 		margin: 3em auto;
+	}
+	.byline {
+		font-size: 16px;
+		padding-left: 10px;
+
 	}
 }
 
 a {
 	cursor: pointer;
+}
+
+.credit-container {
+	padding-top: 20px;
+	// margin-top: -20px;
+	.credit {
+		font-size: 14px;
+		text-align: center;
+		padding-top: 0;
+	}
+}
+
+.border-class {
+	border-top: 1px solid @dark-gray;
+	max-width: 300px;
+	margin: auto;
+}
+
+.author {
+	padding-top: 20px;
 }

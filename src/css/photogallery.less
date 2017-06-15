@@ -4,6 +4,13 @@
 			width:100%;
 		}
 	}
+	.deck {
+		@media @mobile {
+			p {
+				line-height: 1.5;
+			}
+		}
+	}
 
 	.header{
 		text-align:center;
@@ -53,29 +60,43 @@
 		text-align: center;
 		@media @mobile {
 			font-size: 16px;
+			padding-bottom: 4em;
+			text-align: left;
 		}
 	}
-	.Vertical{
-		max-width: 500px;
-		margin: auto;
-	}
+	// .Vertical{
+	// 	max-width: 500px;
+	// 	margin: auto;
+	// }
 
 	.img{
 		// margin: 4em auto;
 		margin: auto;
 		margin-bottom: 1em;
 		width: 100%;
+		text-align: center;
+		// vh: 100%;
 		@media @mobile {
-			margin: 3em auto;
+			margin-bottom: 15px;
 		}
 		.byline {
 			font-size: 14px;
 			padding-left: 10px;
 			padding-top: 0;
 			font-family: @block-graphics;
+			@media @mobile {
+				font-size: 13px;
+				text-align: left;
+			}
 		}
 		img {
-			width: 100%;
+			height: 100vh;
+			margin: auto;
+			@media @mobile {
+				width: 100%;
+				height: auto;
+			}
+			// width: 100%;
 		}
 	}
 
@@ -90,9 +111,7 @@
 			font-size: 14px;
 			text-align: center;
 			padding-top: 0;
-			a {
-				color: @gray-blue;
-			}
+			padding-bottom: 0;
 		}
 	}
 
@@ -108,6 +127,11 @@
 
 	.author, .date {
 		font-family: @block-graphics;
+	}
+
+	a {
+		color: @gray-blue;
+		// font-style: italic;
 	}
 
 }

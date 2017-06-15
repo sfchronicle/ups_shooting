@@ -7,12 +7,17 @@
   "hearst_category":"metro",
   "date":"2017-06-15",
   "url": "http://projects.sfchronicle.com/2017/",
-  "slug": "mass-killings-in-sf/",
+  "slug": "mass-killings-timeline/",
   "twitter_text":"San Francisco UPS facility shooting joins city’s history of mass killings",
   "hashtag":"",
   "image": "assets/social.jpg",
   "sheets": [],
   "docsID":["1xjsUGewn0NTN_kVMVmeYT4nQAzk_-EpumFICHuRGd8I","1tLUzQJt_1SXWZeWw8QwxcdpqMKLgwqkasOU8DIJ1U4o"],
   "production": false,
-  "embedded": false
+  "embedded": false,
+
+  "g_title":"San Francisco UPS shooting gallery",
+  "g_twitter_text":"Images from the scene: San Francisco UPS shooting",
+  "g_description":"Four people died and two others were injured Wednesday in San Francisco’s worst mass killing since 2015.",
+  "g_slug":"ups-shooting-gallery/"
 }

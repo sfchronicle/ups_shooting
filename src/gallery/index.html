@@ -19,7 +19,7 @@
     <%= t.include("partials/_nav.html") %>
 
 
-    <div class="container">
+    <div class="container photo-gallery">
 
       <div class="header">
         <% var data = json.ups_shooting_gallery %>
@@ -33,7 +33,7 @@
       <% json.ups_shooting_gallery['images'].forEach(function(img) { %>
         <div class="img <%= img.Size %>">
           <img src="http://ww2.hdnux.com/photos/61/64/55/<%= img.Wcm_id %>/5/2000x0.jpg">
-          <span class="byline"> <%= img.Photographer %></span>
+          <div class="byline"> <%= img.Photographer %></div>
         </div>
         <div class="caption"><%= img.Caption %> </div>
 
